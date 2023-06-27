@@ -1,0 +1,16 @@
+{
+  "name": "void-uptime",
+  "version": "1.0.0",
+  "description": "Void sunucusuna özel yapılmış uptime botu.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "larex",
+  "engines": {
+    "node": "16.x"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.11"
+  }
+}
