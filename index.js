@@ -1,4 +1,4 @@
-﻿const { PermissionsBitField, EmbedBuilder, ButtonStyle, Client, GatewayIntentBits, ChannelType, Partials, ActionRowBuilder, SelectMenuBuilder, ModalBuilder, TextInputBuilder, TextInputStyle, InteractionType, SelectMenuInteraction, ButtonBuilder, AuditLogEvent } = require("discord.js");
+1﻿const { PermissionsBitField, EmbedBuilder, ButtonStyle, Client, GatewayIntentBits, ChannelType, Partials, ActionRowBuilder, SelectMenuBuilder, ModalBuilder, TextInputBuilder, TextInputStyle, InteractionType, SelectMenuInteraction, ButtonBuilder, AuditLogEvent } = require("discord.js");
 const Discord = require("discord.js");
 const fs = require("fs");
 const fetch = require("node-fetch");
@@ -45,7 +45,7 @@ readdirSync('./events').forEach(e => {
     console.log(chalk.blue`[EVENT]` + ` ${name} eventi yüklendi.`)
 });
 
-client.login(config.token)
+client.login(process.env.token)
 client.setMaxListeners(50)
 
 process.on("uncaughtException", async (error) => {
